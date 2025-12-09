@@ -1,30 +1,45 @@
 {
   "expo": {
-    "name": "ForeignLanguagesVocabularies",
-    "slug": "ForeignLanguagesVocabularies",
+    "name": "Minhas palavras",
+    "slug": "vocab-pt-fr",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "scheme": "vocab-pt-fr",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#4A90D9"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.personal.vocabptfr"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#4A90D9"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "package": "com.personal.vocabptfr",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "@react-native-firebase/app"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "770b02f9-14fb-4e3c-835b-b9f600a6d572"
+      }
     }
   }
 }
